@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 - 磁力狗官网 | 磁力狗联系方式 | 磁力狗客服</title>
+    <meta name="description" content="联系磁力狗团队，获取技术支持、商务合作、媒体采访等服务。多种联系方式，专业团队为您提供帮助。">
+    <meta name="keywords" content="磁力狗,磁力狗联系方式,磁力狗客服,磁力狗技术支持,磁力狗商务合作">
+    <meta name="author" content="磁力狗团队">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://ciligou.com/contact.html">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <img src="images/logo.png" alt="磁力狗logo">
+                    <span>磁力狗</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="about.html">网站简介</a></li>
+                    <li><a href="features.html">功能特点</a></li>
+                    <li><a href="guide.html">使用步骤</a></li>
+                    <li><a href="faq.html">常见问题</a></li>
+                    <li><a href="reviews.html">用户评价</a></li>
+                    <li><a href="download.html">下载中心</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>联系我们</h1>
+                <p>我们随时为您提供帮助和支持</p>
+            </div>
+        </section>
+
+        <section class="contact-overview">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <h3>邮件联系</h3>
+                        <p>发送邮件到我们的邮箱，我们会在24小时内回复您</p>
+                        <div class="contact-details">
+                            <p><strong>技术支持：</strong><a href="mailto:support@ciligou.com">support@ciligou.com</a></p>
+                            <p><strong>商务合作：</strong><a href="mailto:business@ciligou.com">business@ciligou.com</a></p>
+                            <p><strong>媒体采访：</strong><a href="mailto:media@ciligou.com">media@ciligou.com</a></p>
+                            <p><strong>一般咨询：</strong><a href="mailto:info@ciligou.com">info@ciligou.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">💬</div>
+                        <h3>在线客服</h3>
+                        <p>工作时间提供实时在线客服支持</p>
+                        <div class="contact-details">
+                            <p><strong>工作时间：</strong></p>
+                            <p>周一至周五：9:00 - 18:00</p>
+                            <p>周六：10:00 - 16:00</p>
+                            <p>周日：休息</p>
+                            <p><strong>节假日：</strong>10:00 - 16:00</p>
+                        </div>
+                        <a href="#" class="btn btn-primary" onclick="openChat()">开始对话</a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">🌐</div>
+                        <h3>社区支持</h3>
+                        <p>加入我们的社区，与其他用户和开发者交流</p>
+                        <div class="contact-details">
+                            <p><strong>GitHub：</strong><a href="https://github.com/ciligou" target="_blank">github.com/ciligou</a></p>
+                            <p><strong>社区论坛：</strong><a href="community.html">community.ciligou.com</a></p>
+                            <p><strong>技术文档：</strong><a href="docs.html">docs.ciligou.com</a></p>
+                        </div>
+                        <a href="community.html" class="btn btn-secondary">加入社区</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <div class="container">
+                <h2>发送消息</h2>
+                <p>填写下面的表单，我们会尽快回复您</p>
+                
+                <form class="contact-form-content" onsubmit="submitContactForm(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contact-name">姓名 *</label>
+                            <input type="text" id="contact-name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">邮箱 *</label>
+                            <input type="email" id="contact-email" name="email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contact-phone">电话</label>
+                            <input type="tel" id="contact-phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-subject">主题 *</label>
+                            <select id="contact-subject" name="subject" required>
+                                <option value="">请选择主题</option>
+                                <option value="technical">技术支持</option>
+                                <option value="business">商务合作</option>
+                                <option value="media">媒体采访</option>
+                                <option value="feedback">产品反馈</option>
+                                <option value="bug">问题报告</option>
+                                <option value="feature">功能建议</option>
+                                <option value="other">其他</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contact-message">消息内容 *</label>
+                        <textarea id="contact-message" name="message" rows="6" placeholder="请详细描述您的问题或需求..." required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contact-priority">优先级</label>
+                        <select id="contact-priority" name="priority">
+                            <option value="low">低</option>
+                            <option value="medium" selected>中</option>
+                            <option value="high">高</option>
+                            <option value="urgent">紧急</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="newsletter" id="contact-newsletter">
+                            <span class="checkmark"></span>
+                            订阅我们的新闻通讯，获取最新更新和功能信息
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">发送消息</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="office-locations">
+            <div class="container">
+                <h2>办公地址</h2>
+                <div class="locations-grid">
+                    <div class="location-card">
+                        <h3>🏢 总部办公室</h3>
+                        <div class="location-details">
+                            <p><strong>地址：</strong>北京市朝阳区科技园区创新大厦A座15层</p>
+                            <p><strong>邮编：</strong>100000</p>
+                            <p><strong>电话：</strong>+86 10 8888 8888</p>
+                            <p><strong>传真：</strong>+86 10 8888 8889</p>
+                        </div>
+                        <div class="location-hours">
+                            <h4>办公时间：</h4>
+                            <p>周一至周五：9:00 - 18:00</p>
+                            <p>周六：10:00 - 16:00</p>
+                        </div>
+                    </div>
+
+                    <div class="location-card">
+                        <h3>🌆 上海分部</h3>
+                        <div class="location-details">
+                            <p><strong>地址：</strong>上海市浦东新区陆家嘴金融中心B座20层</p>
+                            <p><strong>邮编：</strong>200000</p>
+                            <p><strong>电话：</strong>+86 21 6666 6666</p>
+                            <p><strong>传真：</strong>+86 21 6666 6667</p>
+                        </div>
+                        <div class="location-hours">
+                            <h4>办公时间：</h4>
+                            <p>周一至周五：9:00 - 18:00</p>
+                            <p>周六：10:00 - 16:00</p>
+                        </div>
+                    </div>
+
+                    <div class="location-card">
+                        <h3>🌃 深圳分部</h3>
+                        <div class="location-details">
+                            <p><strong>地址：</strong>深圳市南山区科技园南区软件产业基地C栋8层</p>
+                            <p><strong>邮编：</strong>518000</p>
+                            <p><strong>电话：</strong>+86 755 7777 7777</p>
+                            <p><strong>传真：</strong>+86 755 7777 7778</p>
+                        </div>
+                        <div class="location-hours">
+                            <h4>办公时间：</h4>
+                            <p>周一至周五：9:00 - 18:00</p>
+                            <p>周六：10:00 - 16:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="social-media">
+            <div class="container">
+                <h2>社交媒体</h2>
+                <p>关注我们的社交媒体账号，获取最新动态</p>
+                
+                <div class="social-grid">
+                    <div class="social-card">
+                        <div class="social-icon">📘</div>
+                        <h3>微博</h3>
+                        <p>关注我们的官方微博，获取产品更新和行业资讯</p>
+                        <a href="https://weibo.com/ciligou" target="_blank" class="btn btn-primary">关注微博</a>
+                        <div class="social-stats">
+                            <span>粉丝：50万+</span>
+                            <span>更新：每日</span>
+                        </div>
+                    </div>
+
+                    <div class="social-card">
+                        <div class="social-icon">💬</div>
+                        <h3>微信</h3>
+                        <p>扫描二维码关注微信公众号，获取专属服务</p>
+                        <div class="qr-code">
+                            <img src="images/wechat-qr.png" alt="微信二维码">
+                        </div>
+                        <p class="qr-note">扫描二维码关注</p>
+                    </div>
+
+                    <div class="social-card">
+                        <div class="social-icon">🐙</div>
+                        <h3>GitHub</h3>
+                        <p>查看源代码，参与开源项目开发</p>
+                        <a href="https://github.com/ciligou" target="_blank" class="btn btn-primary">访问GitHub</a>
+                        <div class="social-stats">
+                            <span>Star：5,000+</span>
+                            <span>Fork：1,200+</span>
+                        </div>
+                    </div>
+
+                    <div class="social-card">
+                        <div class="social-icon">📺</div>
+                        <h3>YouTube</h3>
+                        <p>观看产品演示视频和教程</p>
+                        <a href="https://youtube.com/c/ciligou" target="_blank" class="btn btn-primary">订阅频道</a>
+                        <div class="social-stats">
+                            <span>订阅：10万+</span>
+                            <span>视频：200+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-preview">
+            <div class="container">
+                <h2>常见问题</h2>
+                <p>在联系之前，您可能想查看这些常见问题的答案</p>
+                
+                <div class="faq-preview-grid">
+                    <div class="faq-preview-item">
+                        <h3>如何获得技术支持？</h3>
+                        <p>您可以通过邮件、在线客服或社区论坛获得技术支持。我们的技术团队会在24小时内回复您的问题。</p>
+                        <a href="faq.html#technical" class="btn btn-secondary">了解更多</a>
+                    </div>
+
+                    <div class="faq-preview-item">
+                        <h3>商务合作流程是什么？</h3>
+                        <p>商务合作请发送邮件到business@ciligou.com，我们会安排专门的商务团队与您联系，讨论合作细节。</p>
+                        <a href="business.html" class="btn btn-secondary">了解更多</a>
+                    </div>
+
+                    <div class="faq-preview-item">
+                        <h3>如何报告Bug？</h3>
+                        <p>您可以通过GitHub Issues、邮件或联系表单报告Bug。请详细描述问题现象和复现步骤。</p>
+                        <a href="https://github.com/ciligou/issues" target="_blank" class="btn btn-secondary">报告Bug</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="response-time">
+            <div class="container">
+                <h2>响应时间承诺</h2>
+                <div class="response-grid">
+                    <div class="response-item">
+                        <h3>⏰ 邮件回复</h3>
+                        <p><strong>24小时内</strong>回复所有邮件咨询</p>
+                    </div>
+                    <div class="response-item">
+                        <h3>💬 在线客服</h3>
+                        <p><strong>实时响应</strong>工作时间内的在线咨询</p>
+                    </div>
+                    <div class="response-item">
+                        <h3>🐛 Bug报告</h3>
+                        <p><strong>48小时内</strong>确认并开始处理</p>
+                    </div>
+                    <div class="response-item">
+                        <h3>🤝 商务合作</h3>
+                        <p><strong>3个工作日内</strong>安排商务团队联系</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>需要帮助？</h2>
+                <p>我们随时准备为您提供专业的服务和支持</p>
+                <div class="cta-buttons">
+                    <a href="#contact-form" class="btn btn-primary">立即联系</a>
+                    <a href="faq.html" class="btn btn-secondary">查看FAQ</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>磁力狗</h4>
+                    <p>公益开源项目，为用户提供优质服务</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="features.html">功能特点</a></li>
+                        <li><a href="download.html">下载中心</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>支持</h4>
+                    <ul>
+                        <li><a href="guide.html">使用指南</a></li>
+                        <li><a href="faq.html">常见问题</a></li>
+                        <li><a href="support.html">技术支持</a></li>
+                        <li><a href="community.html">社区论坛</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>关注我们</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="GitHub">GitHub</a>
+                        <a href="#" aria-label="微博">微博</a>
+                        <a href="#" aria-label="微信">微信</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 磁力狗. 保留所有权利. | <a href="privacy.html">隐私政策</a> | <a href="terms.html">服务条款</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // 联系表单提交
+        function submitContactForm(event) {
+            event.preventDefault();
+            
+            const formData = new FormData(event.target);
+            const contactData = {
+                name: formData.get('name'),
+                email: formData.get('email'),
+                phone: formData.get('phone'),
+                subject: formData.get('subject'),
+                message: formData.get('message'),
+                priority: formData.get('priority'),
+                newsletter: formData.get('newsletter') === 'on'
+            };
+            
+            // 这里可以发送到后端
+            console.log('联系表单数据:', contactData);
+            
+            // 显示成功消息
+            alert('感谢您的消息！我们会在24小时内回复您。');
+            
+            // 重置表单
+            event.target.reset();
+            
+            // 跟踪联系表单提交
+            trackContactForm(contactData);
+        }
+
+        // 跟踪联系表单
+        function trackContactForm(data) {
+            console.log('联系表单跟踪:', data);
+            // 这里可以发送到分析服务
+        }
+
+        // 打开在线聊天
+        function openChat() {
+            // 这里可以实现在线聊天功能
+            console.log('打开在线聊天');
+            alert('在线聊天功能开发中，请稍后再试。您也可以通过邮件联系我们。');
+        }
+
+        // 平滑滚动到联系表单
+        document.querySelectorAll('a[href="#contact-form"]').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector('.contact-form').scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // 表单验证
+        document.addEventListener('DOMContentLoaded', function() {
+            const emailInput = document.getElementById('contact-email');
+            const phoneInput = document.getElementById('contact-phone');
+            
+            // 邮箱验证
+            emailInput.addEventListener('blur', function() {
+                const email = this.value;
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                
+                if (email && !emailRegex.test(email)) {
+                    this.setCustomValidity('请输入有效的邮箱地址');
+                } else {
+                    this.setCustomValidity('');
+                }
+            });
+            
+            // 电话验证
+            phoneInput.addEventListener('blur', function() {
+                const phone = this.value;
+                const phoneRegex = /^[\d\s\-\+\(\)]+$/;
+                
+                if (phone && !phoneRegex.test(phone)) {
+                    this.setCustomValidity('请输入有效的电话号码');
+                } else {
+                    this.setCustomValidity('');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
